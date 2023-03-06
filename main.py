@@ -119,4 +119,4 @@ async def battle(ctx, extras):
         return await ctx.respond(embed=embed)
 
 
-bot.run(os.environ.get('BOT_TOKEN'))
+bot.run(os.environ['BOT_TOKEN'])
