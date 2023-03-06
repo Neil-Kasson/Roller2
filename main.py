@@ -22,7 +22,7 @@ async def help(ctx):
         title = "Help Menu",
         description = "This is the help menu for the **Roller Bot 2.0**!!"
     )
-    embed.add_field(name="**Commands:**", value=f"""
+    embed.add_field(name="__**Commands:**__", value=f"""
     **/roll** - To make roll some dice.
     **/battle** - Set the battle order of everyone. \n    (feel free to add in some extra battlers if you'd like)
     """)
