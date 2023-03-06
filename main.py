@@ -2,6 +2,7 @@ import random
 import discord
 from discord import option
 import os
+from boto.s3.connection import S3Connection
 
 intents = discord.Intents.all()
 bot = discord.Bot()
@@ -118,5 +119,5 @@ async def battle(ctx, extras):
         embed.set_footer(icon_url=ctx.author.avatar, text=f"Command Requested by: {ctx.author.display_name}")
         return await ctx.respond(embed=embed)
 
-
-bot.run(os.environ.get('BOT_TOKEN'))
+s3 = S3Connection(os.environ.get('BOT_TOKEN'), os.environ.get('BOT_TOKEN'))
+bot.run(os.environ.get(s3))
