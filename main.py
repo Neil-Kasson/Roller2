@@ -19,7 +19,7 @@ async def on_ready():
 async def help(ctx):
     embed = discord.Embed(
         color = discord.Color.green(),
-        title = "Help Menu",
+        title = "__Help Menu__",
         description = "This is the help menu for the **Roller Bot 2.0**!!"
     )
     embed.add_field(name="__**Commands:**__", value=f"""
