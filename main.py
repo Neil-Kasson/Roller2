@@ -1,6 +1,7 @@
 import random
 import discord
 from discord import option
+import os
 
 intents = discord.Intents.all()
 bot = discord.Bot()
@@ -118,4 +119,4 @@ async def battle(ctx, extras):
         return await ctx.respond(embed=embed)
 
 
-bot.run(BOT_TOKEN)
+bot.run(os.environ.get('BOT_TOKEN'))
