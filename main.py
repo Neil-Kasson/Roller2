@@ -120,4 +120,5 @@ async def battle(ctx, extras):
         return await ctx.respond(embed=embed)
 
 # s3 = S3Connection(os.environ.get('BOT_TOKEN'), os.environ.get('BOT_TOKEN'))
-bot.run(os.getenv('BOT_TOKEN'))
+if __name__ == '__main__':
+    bot.run(os.getenv('BOT_TOKEN'))
