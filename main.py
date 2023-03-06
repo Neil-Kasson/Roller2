@@ -24,7 +24,7 @@ async def help(ctx):
     )
     embed.add_field(name="**Commands:**", value=f"""
     `/roll` - To make roll some dice.
-    `/battle` - Set the battle order of everyone \n\t(feel free to add in some extra battlers if you'd like)
+    `/battle` - Set the battle order of everyone. \n    (feel free to add in some extra battlers if you'd like)
     """)
     await ctx.respond(embed=embed)
 
