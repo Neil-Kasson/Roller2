@@ -20,7 +20,7 @@ async def help(ctx):
     embed = discord.Embed(
         color = discord.Color.green(),
         title = "Help Menu",
-        description = "You've stumbled upon the help menu for Mr. Grim's Timetracker system!!"
+        description = "This is the help menu for the **Roller Bot 2.0**!!"
     )
     embed.add_field(name="**Commands:**", value=f"""
     `/roll` - To make roll some dice.
